@@ -5,24 +5,24 @@ export default function DashboardProfessor() {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    alert('Logout realizado!');
-    navigate('/');
+    
+    navigate('/'); 
   };
 
   const goToTurmasCalendario = () => {
-    alert('Indo para Turmas e Calendário!');
+    navigate('/turmas-calendario'); 
   };
 
   const goToLancarNotas = () => {
-    alert('Indo para Lançar Notas e Presenças!');
+
   };
 
   const goToAcompanharAlunos = () => {
-    alert('Indo para Acompanhar Alunos!');
+   
   };
 
   const goToMensagens = () => {
-    alert('Indo para Mensagens!');
+  
   };
 
   return (
