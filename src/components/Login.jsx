@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase/config';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -10,13 +12,16 @@ export default function Login() {
     e.preventDefault();
     console.log('Tentando login com:', email, password);
 
-    // Simulação de login bem-sucedido para testar a navegação
-    if (email === 'professor@escola.com' && password === 'senha123') {
-      alert('Login bem-sucedido!');
-      navigate('/dashboard');
-    } else {
-      alert('Email ou senha incorretos.');
-    }
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        console.log("Login realizado:", userCredential.user);
+        alert('Login bem-sucedido!');
+        navigate('/dashboard');
+      })
+      .catch((error) => {
+        console.error("Erro no login:", error);
+        alert('Email ou senha incorretos.');
+      });
   };
 
   return (
