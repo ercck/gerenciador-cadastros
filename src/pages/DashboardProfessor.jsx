@@ -13,8 +13,12 @@ export default function DashboardProfessor() {
     alert('Indo para Turmas e Calendário!');
   };
 
+  const goToLancarPresenca = () => {
+    navigate('/lancar-presenca');
+  };
+
   const goToLancarNotas = () => {
-    alert('Indo para Lançar Notas e Presenças!');
+    navigate('/lancar-notas');
   };
 
   const goToAcompanharAlunos = () => {
@@ -30,7 +34,8 @@ export default function DashboardProfessor() {
       <h2>Bem-vindo, Professor Rafael!</h2>
       <p>O que você gostaria de fazer hoje?</p>
       <button onClick={goToTurmasCalendario}>Turmas e Calendário</button>
-      <button onClick={goToLancarNotas}>Lançar Notas e Presenças</button>
+      <button onClick={goToLancarPresenca}>Lançar Presença</button>
+      <button onClick={goToLancarNotas}>Lançar Notas</button>
       <button onClick={goToAcompanharAlunos}>Acompanhar Alunos</button>
       <button onClick={goToMensagens}>Mensagens</button>
       <button onClick={handleLogout}>Sair</button>
