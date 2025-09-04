@@ -6,6 +6,8 @@ import TurmasCalendario from './pages/TurmasCalendario';
 import './styles.css';
 import LancarPresencaPage from './pages/LancarPresencaPage';
 import LancarNotasPage from './pages/LancarNotasPage';
+import AcompanharAlunosPage from './pages/AcompanharAlunosPage';
+import Mensagens from './pages/MensagensPage';  
 
 export default function App() {
   return (
@@ -17,6 +19,8 @@ export default function App() {
           <Route path="/turmas-calendario" element={<TurmasCalendario />} />
           <Route path="/lancar-presenca" element={<LancarPresencaPage />} />
           <Route path="/lancar-notas" element={<LancarNotasPage />} />
+          <Route path="/acompanhar-alunos" element={<AcompanharAlunosPage />} />
+          <Route path="/mensagens" element={<Mensagens />} />
         </Routes>
       </div>
     </Router>

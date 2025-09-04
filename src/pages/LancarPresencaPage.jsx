@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const MOCK_ALUNOS = [
   { id: 101, nome: 'Ana Clara Silva', matricula: '2023001', presente: false, foto: 'https://randomuser.me/api/portraits/women/32.jpg' },
@@ -23,6 +24,7 @@ const MOCK_TURMAS = [
 ];
 
 const LancarPresenca = () => {
+  const navigate = useNavigate(); 
   const [selectedClass, setSelectedClass] = useState('');
   const [selectedDate, setSelectedDate] = useState('');
   const [students, setStudents] = useState([]);
@@ -78,11 +80,11 @@ const LancarPresenca = () => {
     
     setLoading(true);
     
-    // Simular envio para API
+    
     setTimeout(() => {
       setLoading(false);
       
-      // Log dos dados que seriam enviados
+     
       console.log('Dados enviados para a API:', {
         turmaId: selectedClass,
         data: selectedDate,
@@ -91,7 +93,7 @@ const LancarPresenca = () => {
       
       alert('Presenças registradas com sucesso!');
       
-      // Opcionalmente, reiniciar o formulário ou fazer outra ação
+      
     }, 1000);
   };
 
@@ -214,6 +216,14 @@ const LancarPresenca = () => {
           )}
         </>
       )}
+
+      {/* Botão para voltar ao dashboard do professor */}
+      <button 
+        onClick={() => navigate('/dashboard')}
+        style={{ marginTop: '20px' }}
+      >
+        Voltar para o Dashboard
+      </button>
     </div>
   );
 };

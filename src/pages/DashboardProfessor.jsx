@@ -21,11 +21,11 @@ export default function DashboardProfessor() {
   };
 
   const goToAcompanharAlunos = () => {
-    
+    navigate('/acompanhar-alunos');
   };
 
   const goToMensagens = () => {
-    
+    navigate('/mensagens');
   };
 
   return (

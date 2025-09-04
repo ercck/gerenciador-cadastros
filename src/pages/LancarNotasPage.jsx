@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 
 const LancarNotas = () => {
+  const navigate = useNavigate(); 
   const [selectedClass, setSelectedClass] = useState('');
   const [selectedEvaluation, setSelectedEvaluation] = useState('');
   const [showEvaluationForm, setShowEvaluationForm] = useState(false);
@@ -31,12 +33,12 @@ const LancarNotas = () => {
 
   const fetchEvaluations = async (classId) => {
     try {
-      // Trocar pra api
+      
       const response = await fetch(`/api/turmas/${classId}/avaliacoes`);
       const data = await response.json();
       setEvaluations(data);
-      setSelectedEvaluation(''); // Reset selected evaluation
-      setStudents([]); // Clear student list
+      setSelectedEvaluation(''); 
+      setStudents([]); 
     } catch (error) {
       console.error('Error fetching evaluations:', error);
     }
@@ -44,7 +46,7 @@ const LancarNotas = () => {
 
   const fetchStudentsWithGrades = async (classId, evaluationId) => {
     try {
-      // Trocar pra api
+      
       const response = await fetch(`/api/turmas/${classId}/avaliacoes/${evaluationId}/alunos`);
       const data = await response.json();
       
@@ -323,6 +325,14 @@ const LancarNotas = () => {
       {selectedClass && !selectedEvaluation && (
         <p>Selecione uma avaliação ou crie uma nova.</p>
       )}
+
+      {/* Botão para voltar ao dashboard do professor */}
+      <button 
+        onClick={() => navigate('/dashboard')}
+        style={{ marginTop: '20px' }}
+      >
+        Voltar para o Dashboard
+      </button>
     </div>
   );
 };
