@@ -66,7 +66,7 @@ A interface é simples e intuitiva, feita com **React, HTML, CSS** e
 1.  **Clonar o repositório**
 
     ``` bash
-    git clone https://github.com/seuusuario/seu-repositorio.git
+    git clone https://github.com/ercck/gerenciador-cadastros
     cd seu-repositorio
     ```
 
