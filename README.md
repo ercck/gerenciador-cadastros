@@ -117,7 +117,7 @@ A interface é simples e intuitiva, feita com **React, HTML, CSS** e
 ## 👨‍🏫 Usuário de Teste
 
 No Firebase, crie um usuário de teste (exemplo:
-`professor@escola.com / 123456`) para acessar o sistema.
+`professor@escola.com / 123456`) para acessar o sistema. O mesmo que usamos para realizarmos nosso teste.
 
 ------------------------------------------------------------------------
 
