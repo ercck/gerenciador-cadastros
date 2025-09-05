@@ -48,10 +48,13 @@ button:hover {
 
 input {
   width: 100%;
-  padding: 0.7rem;   
-  margin-top: 0.8rem;
+  padding: 1rem;   
+  margin-top: 1rem;
   font-size: 1rem;    
   border-radius: 10px;
   border: 1px solid #aaa;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
