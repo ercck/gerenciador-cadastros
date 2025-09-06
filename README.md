@@ -118,7 +118,7 @@ A interface é simples e intuitiva, feita com **React, HTML, CSS** e
 
 No Firebase, crie um usuário de teste (exemplo:
 `professor@escola.com / senha123`) para acessar o sistema. O mesmo que usamos para realizarmos nosso teste.
-
+Confira o modelo prático disponibilzado aqui: https://gerenciador-cadastros.vercel.app/
 ------------------------------------------------------------------------
 
 ## 📌 Próximos Passos / Melhorias
