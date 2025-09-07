@@ -141,6 +141,6 @@ Confira o modelo prático disponibilizado aqui: https://gerenciador-cadastros.ve
 ### Thalita Karine Lucas 
 ### Julia Marques de Oliveira Fonseca 
 ### Gabriel Sipriano Marcilio 
-### KauaGuilherme Rodrigues Dellaquila 
+### Kauã Guilherme Rodrigues Dellaquila 
 ### Hermes Renato Serra 
 ### Felipe Schneider Quintilhano
