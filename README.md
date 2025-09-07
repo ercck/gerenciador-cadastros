@@ -133,3 +133,14 @@ Confira o modelo prático disponibilizado aqui: https://gerenciador-cadastros.ve
 
 📄 Licença: MIT
 
+
+
+# Colaboradores
+
+### Erick Ferreira de Melo 
+### Thalita Karine Lucas 
+### Julia Marques de Oliveira Fonseca 
+### Gabriel Sipriano Marcilio 
+### KauaGuilherme Rodrigues Dellaquila 
+### Hermes Renato Serra 
+### Felipe Schneider Quintilhano
