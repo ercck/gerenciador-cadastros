@@ -124,9 +124,9 @@ Confira o modelo prático disponibilizado aqui: https://gerenciador-cadastros.ve
 ## 📌 Próximos Passos / Melhorias
 
 -   Integração com banco de dados real (Firestore) em todas as
-    funcionalidades.\
--   Upload de arquivos (ex.: trabalhos e comunicados).\
--   Dashboard de gráficos com desempenho dos alunos.\
+    funcionalidades. \
+-   Upload de arquivos (ex.: trabalhos e comunicados). \
+-   Dashboard de gráficos com desempenho dos alunos. \
 -   Sistema de notificações em tempo real.
 
 ------------------------------------------------------------------------
